@@ -3,171 +3,68 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Salud & Fitness — Nutrición, Bienestar y Curiosidades</title>
-  <meta name="description" content="Artículos claros y prácticos sobre nutrición, ejercicio, bienestar físico y mental. Fácil de leer para toda la familia.">
-  <meta name="theme-color" content="#0f766e">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💚</text></svg>">
+  <title>Salud & Fitness — Nutrición y Bienestar</title>
+  <meta name="description" content="Consejos de nutrición, ejercicio y bienestar físico y mental para todos.">
   <style>
-    :root{--accent:#0f766e;--bg:#f7faf9;--card:#ffffff;--muted:#6b7280;--maxw:1100px;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.5}
-    .container{max-width:var(--maxw);margin:24px auto;padding:0 16px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#34d399);display:grid;place-items:center;color:white;font-weight:700}
-    nav a{margin-left:14px;color:var(--accent);text-decoration:none;font-weight:600}
-    .hero{margin-top:18px;background:linear-gradient(90deg,rgba(15,118,110,0.06),transparent);padding:28px;border-radius:14px}
-    .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
-    @media(min-width:900px){.grid{grid-template-columns:2fr 1fr}}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
-    .post-list{display:grid;gap:12px}
-    .post{display:flex;gap:14px;align-items:center}
-    .thumb{width:120px;height:80px;border-radius:8px;background:#e6eef3;flex:0 0 120px;display:grid;place-items:center;color:var(--muted)}
-    .meta{font-size:13px;color:var(--muted)}
-    footer{margin:28px 0;color:var(--muted);font-size:14px}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:700}
-    .pill{font-size:13px;padding:6px 10px;border-radius:999px;background:#ecfdf5;color:#065f46;margin-right:8px}
-    .small{font-size:14px;color:var(--muted)}
-    .search{display:flex;gap:8px}
-    input[type='search']{padding:10px;border-radius:10px;border:1px solid #e6eef3;flex:1}
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f7f7f7; color:#111;}
+    header {background:#0f766e; color:white; padding:20px; text-align:center;}
+    nav a {color:white; margin:0 10px; text-decoration:none; font-weight:bold;}
+    main {padding:20px;}
+    section {margin-bottom:30px; background:white; padding:15px; border-radius:10px;}
+    h2 {color:#0f766e;}
+    footer {text-align:center; padding:15px; background:#eee; font-size:14px;}
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">SF</div>
-        <div>
-          <div style="font-weight:800;font-size:18px">Salud & Fitness</div>
-          <div class="small">Nutrición • Ejercicio • Bienestar</div>
-        </div>
-      </div>
-      <nav>
-        <a href="#nutricion">Nutrición</a>
-        <a href="#ejercicio">Ejercicio</a>
-        <a href="#mental">Bienestar</a>
-        <a href="#curiosidades">Curiosidades</a>
-        <a class="btn" href="#newsletter">Suscríbete</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero card">
-        <h1 style="margin:0 0 8px">Guía clara de salud y fitness para todos</h1>
-        <p class="small" style="margin:0 0 12px">Consejos prácticos, recetas fáciles, entrenamientos cortos y curiosidades científicas explicadas sencillo.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a href="#nutricion" class="pill">Nutrición</a>
-          <a href="#ejercicio" class="pill">Entrenamientos</a>
-          <a href="#mental" class="pill">Bienestar mental</a>
-          <a href="#curiosidades" class="pill">Curiosidades</a>
-        </div>
-      </section>
-
-      <div class="grid">
-        <section>
-          <div class="card">
-            <h2 id="nutricion">Nutrición — Artículos destacados</h2>
-            <div class="post-list">
-              <article class="post">
-                <div class="thumb">Imagen</div>
-                <div>
-                  <a href="#" style="font-weight:700;color:#0f172a;text-decoration:none">Dieta mediterránea: 7 recetas fáciles para empezar</a>
-                  <div class="meta">5 minutos · 1.2k lecturas</div>
-                </div>
-              </article>
-              <article class="post">
-                <div class="thumb">Imagen</div>
-                <div>
-                  <a href="#" style="font-weight:700;color:#0f172a;text-decoration:none">Qué comer antes y después de entrenar</a>
-                  <div class="meta">4 min · 980 lecturas</div>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="card" style="margin-top:14px">
-            <h2 id="ejercicio">Ejercicio — Rápidos y efectivos</h2>
-            <div class="post-list">
-              <article class="post">
-                <div class="thumb">Gif</div>
-                <div>
-                  <a href="#" style="font-weight:700;color:#0f172a;text-decoration:none">Rutina de 15 minutos sin material para principiantes</a>
-                  <div class="meta">Video · 3k vistas</div>
-                </div>
-              </article>
-              <article class="post">
-                <div class="thumb">Gif</div>
-                <div>
-                  <a href="#" style="font-weight:700;color:#0f172a;text-decoration:none">Mejora tu postura en 10 ejercicios</a>
-                  <div class="meta">4 min · 860 lecturas</div>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="card" style="margin-top:14px">
-            <h2 id="mental">Bienestar mental</h2>
-            <p class="small">Prácticas breves, técnicas de respiración y micro‑hábitos para reducir estrés.</p>
-            <a href="#" class="btn" style="margin-top:8px;display:inline-block">Ver ejercicios</a>
-          </div>
-        </section>
-
-        <aside>
-          <div class="card">
-            <h3>Buscar</h3>
-            <div class="search"><input type="search" placeholder="Busca ejercicios, recetas..." aria-label="Buscar"><a class="btn" href="#">Ir</a></div>
-          </div>
-
-          <div class="card" style="margin-top:12px">
-            <h3 id="newsletter">Suscríbete</h3>
-            <p class="small">Recibe 3 recetas y 2 rutinas rápidas cada semana (gratis).</p>
-            <form id="form" onsubmit="event.preventDefault();alert('Gracias — integración de newsletter pendiente');">
-              <input aria-label="email" placeholder="tu@correo.com" style="width:100%;padding:10px;border-radius:10px;border:1px solid #e6eef3;margin-bottom:8px">
-              <button class="btn" style="width:100%">Suscribirme</button>
-            </form>
-          </div>
-
-          <div class="card" style="margin-top:12px">
-            <h3>Top curiosidades</h3>
-            <ol style="padding-left:18px;margin:0">
-              <li style="margin:8px 0"><a href="#">¿Por qué dormir ayuda a perder peso?</a></li>
-              <li style="margin:8px 0"><a href="#">Alimentos que realmente sacian</a></li>
-              <li style="margin:8px 0"><a href="#">Micro‑rutinas de 2 minutos</a></li>
-            </ol>
-          </div>
-        </aside>
-      </div>
-
-      <section class="card" style="margin-top:16px">
-        <h2>¿Nuevo aquí? Empieza por estos artículos</h2>
-        <ul>
-          <li>Guía rápida: 10 alimentos que mejoran tu energía</li>
-          <li>Entrenamiento HIIT para principiantes (sin material)</li>
-          <li>Meditaciones guiadas de 5 minutos para empezar</li>
-        </ul>
-      </section>
-    </main>
-
-    <footer class="small">
-      <div class="card">
-        <strong>Salud & Fitness</strong> — Contenido informativo. Consulta a un profesional para consejos médicos.
-        <div style="margin-top:8px">© "Salud & Fitness" • Política de privacidad • Contacto</div>
-      </div>
-    </footer>
-  </div>
-
-  <script>
-    // Pequeño script para accesibilidad y datos estructurados mínimos
-    (function(){
-      const ld = {
-        "@context":"https://schema.org",
-        "@type":"WebSite",
-        "name":"Salud & Fitness",
-        "url":location.origin
-      };
-      const s=document.createElement('script');s.type='application/ld+json';s.textContent=JSON.stringify(ld);document.head.appendChild(s);
-    })();
-  </script>
+  <header>
+    <h1>Salud & Fitness</h1>
+    <nav>
+      <a href="#nutricion">Nutrición</a>
+      <a href="#ejercicio">Ejercicio</a>
+      <a href="#bienestar">Bienestar</a>
+      <a href="#curiosidades">Curiosidades</a>
+    </nav>
+  </header>
+  <main>
+    <section id="nutricion">
+      <h2>Nutrición</h2>
+      <p>Aprende a comer de manera saludable con recetas fáciles y consejos prácticos para todo el día.</p>
+      <ul>
+        <li>Desayuno saludable: avena con frutas.</li>
+        <li>Almuerzo equilibrado: ensalada con proteína.</li>
+        <li>Cena ligera: sopa de verduras y pescado.</li>
+      </ul>
+    </section>
+    <section id="ejercicio">
+      <h2>Ejercicio</h2>
+      <p>Rutinas rápidas y efectivas para mejorar tu fuerza, resistencia y postura, incluso sin salir de casa.</p>
+      <ul>
+        <li>Rutina de 15 minutos para principiantes.</li>
+        <li>Ejercicios de estiramiento diario.</li>
+        <li>Entrenamiento HIIT para quemar grasa.</li>
+      </ul>
+    </section>
+    <section id="bienestar">
+      <h2>Bienestar mental</h2>
+      <p>Técnicas simples para reducir estrés y mejorar tu estado de ánimo todos los días.</p>
+      <ul>
+        <li>Meditación guiada de 5 minutos.</li>
+        <li>Respiración profunda y relajación.</li>
+        <li>Pequeños hábitos diarios de gratitud.</li>
+      </ul>
+    </section>
+    <section id="curiosidades">
+      <h2>Curiosidades</h2>
+      <p>Datos sorprendentes sobre la salud y el cuerpo humano.</p>
+      <ul>
+        <li>Dormir bien ayuda a perder peso.</li>
+        <li>El agua antes de comer reduce el apetito.</li>
+        <li>El ejercicio mejora tu memoria y concentración.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    © 2025 Salud & Fitness. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
-
